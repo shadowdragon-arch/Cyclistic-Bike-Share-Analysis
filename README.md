@@ -21,11 +21,11 @@ To ensure data integrity and prepare the dataset for Business Intelligence and M
 ## 5. Exploratory Data Analysis (EDA)
 Key behavioral patterns were identified through temporal aggregation (monthly, weekly, hourly) and ride duration distribution analysis across user segments. These insights were operationalized through an interactive Power BI dashboard.
 
-![Executive Overview](Cyclistic-Bike-Share-Analysis_page-0001.jpg)
+<img width="2075" height="1200" alt="Executive Overview" src="https://github.com/user-attachments/assets/2d97992e-7b37-4fda-bb36-5dba8a9e1582" />
 
-![Behavior Analysis](Cyclistic-Bike-Share-Analysis_page-0002.jpg)
+<img width="2075" height="1200" alt="Behavior Analysis" src="https://github.com/user-attachments/assets/d62303ef-f7a0-4b31-a06a-ed9cd25a0f77" />
 
-![Strategy & Action](Cyclistic-Bike-Share-Analysis_page-0003.jpg)
+<img width="2075" height="1200" alt="Strategy   Action" src="https://github.com/user-attachments/assets/e9e14317-f4d5-4cec-8994-09a833dd9bb4" />
 
 ## 6. Key Behavioral Insights
 These patterns indicate that **casual riders are not failed commuters, but a fundamentally different recreational segment.**
