@@ -22,10 +22,13 @@ To ensure data integrity and prepare the dataset for Business Intelligence and M
 Key behavioral patterns were identified through temporal aggregation (monthly, weekly, hourly) and ride duration distribution analysis across user segments. These insights were operationalized through an interactive Power BI dashboard.
 
 <img width="2075" height="1200" alt="Executive Overview" src="https://github.com/user-attachments/assets/2d97992e-7b37-4fda-bb36-5dba8a9e1582" />
+*Figure 1: Executive Overview illustrating the severe winter drop-off and the 64% vs. 35% Member-to-Casual volume split.*
 
 <img width="2075" height="1200" alt="Behavior Analysis" src="https://github.com/user-attachments/assets/d62303ef-f7a0-4b31-a06a-ed9cd25a0f77" />
+*Figure 2: Behavioral Analysis revealing the 66% weekend volume spike for Casual riders and the afternoon "Hot Zone" matrix.*
 
-<img width="2075" height="1200" alt="Strategy   Action" src="https://github.com/user-attachments/assets/e9e14317-f4d5-4cec-8994-09a833dd9bb4" />
+<img width="2075" height="1200" alt="Strategy Action" src="https://github.com/user-attachments/assets/e9e14317-f4d5-4cec-8994-09a833dd9bb4" />
+*Figure 3: Interactive Strategy Dashboard featuring a What-If Parameter simulator for dynamic revenue forecasting.*
 
 ## 6. Key Behavioral Insights
 These patterns indicate that **casual riders are not failed commuters, but a fundamentally different recreational segment.**
@@ -35,7 +38,9 @@ These patterns indicate that **casual riders are not failed commuters, but a fun
 
 ## 7. Strategic Business Recommendations
 Based on the data, the following Experience-Driven Strategy is recommended:
-* **Action 1 (Product): Launch a "Weekend-Only" Membership.** Target the 66% weekend volume spike with a $120 annual plan that restricts weekday commuting benefits. **KPI:** Estimated $3M+ gross revenue (excluding marketing and operational costs) at a conservative 5% conversion rate.
+* **Action 1 (Product): Launch a "Weekend-Only" Membership.** Target the 66% weekend volume spike with a $120 annual plan that restricts weekday commuting benefits. 
+  * **Financial Impact:** Estimated $3,000,000+ gross annual revenue increase (excluding marketing/operational costs).
+  * **Calculation:** *500,000 Target Weekend Casuals × 5% Conversion Rate × $120 Annual Fee = $3,000,000.*
 * **Action 2 (Marketing): Precision Ad Spend.** Halt morning digital ad spend for casuals. Reallocate budget to target location-based ads strictly during the proven "Hot Zone" (Weekends, 12:00 PM - 5:00 PM). **KPI:** Increased Return on Ad Spend (ROAS).
 * **Action 3 (Lifecycle): Pre-Season Campaign.** Data shows a 59.9% winter drop-off. Launch onboarding campaigns in April to capture users before the summer peak.
 
@@ -56,3 +61,13 @@ Based on the data, the following Experience-Driven Strategy is recommended:
 
 ## 11. Future Scope (Machine Learning)
 The output of the Python pipeline is a strictly clean, numeric, and categorical CSV. It is fully formatted and ML-ready for future implementation of **K-Means Clustering** to algorithmically discover hidden micro-segments of users beyond the binary "Casual vs. Member" labels.
+
+## 12. Repository Structure & Reproducibility
+* `Cyclistic_Executive_Pipeline.ipynb`: The core Python/Pandas script used to concatenate, clean, and engineer the 5.6M rows of raw CSV data.
+* `Cyclistic-Bike-Share-Analysis.pdf`: The finalized, high-resolution export of the Power BI interactive dashboard.
+* `Cyclistic_Dashboard.pbix`: The source Power BI file containing all DAX measures, strict chronological sorting logic, and the What-If parameter mechanics. 
+
+## 13. Key Personal Learnings
+* **Engineering for Scale:** Handling a dataset of this size reinforces the necessity of programmatic workflows (Python) over traditional spreadsheet software to prevent memory crashing and ensure reproducibility.
+* **Business Translation:** Raw statistical variance and temporal heatmaps hold little value until they are translated into actionable, revenue-generating strategies that stakeholders can understand at a glance.
+* **Intellectual Honesty:** Acknowledging the assumptions in a dataset (e.g., lack of unique user IDs or CAC metrics) builds far more credibility than presenting a flawless, over-promised forecast.
