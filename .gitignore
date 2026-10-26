@@ -1,0 +1,5 @@
+# Ignore raw data files
+*.csv
+*.zip
+data/
+*.parquet
